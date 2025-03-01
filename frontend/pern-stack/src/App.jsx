@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage';
 import { useTheme } from './store/useTheme';
 import { Toaster } from 'react-hot-toast';  // Corrected the Toastor to Toaster
+import Developer from './pages/Developer';
 
 function App() {
   const { theme } = useTheme();
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="/Developer" element={<Developer />} />
       </Routes>
       <Toaster /> {/* Corrected to Toaster for displaying toast notifications */}
     </div>

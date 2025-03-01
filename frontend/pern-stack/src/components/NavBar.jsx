@@ -1,6 +1,7 @@
 // import { ShoppingCartIcon } from '@heroicons/react/24/outline'
 import { Link, useResolvedPath } from 'react-router-dom'
 import ThemeSelector from './ThemeSelector'
+import Developer from '../pages/Developer'
 
 const NavBar = () => {
   const { pathname } = useResolvedPath()
@@ -27,9 +28,15 @@ const NavBar = () => {
               <ThemeSelector />
               {isHomePage && (
                 <div className="indicator">
-                  <div className="p-2 rounded-full hover:bg-base-200 transition-colors justify-center items-center flex">
-                    {/* <ShoppingCartIcon className="size-5" />
-                    <span className="badge badge-sm badge-primary indicator-item">8</span> */}
+                    <Link to="/developer"><button className="btn btn-primary" >Developer
+          
+          </button></Link>
+                  <div className=" transition-colors justify-center items-center flex">
+                     {/* <ShoppingCartIcon className="size-5" /> */}
+                    {/* <span className="badge badge-sm badge-primary indicator-item">
+                      
+                      </span>  */}
+                   
                   </div>
                 </div>
               )}
