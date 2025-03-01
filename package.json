@@ -5,7 +5,7 @@
   "main": "backend/server.js",
   "scripts": {
     "dev": "nodemon backend/server.js",
-    "build": "npm install && npm install --prefix frontend/pern-stack && npm run build --prefix frontend/pern-stack",
+    "build": "npm install && npm install --prefix frontend/pern-stack && npm run build --prefix frontend/pern-stack  node backend/server.js",
     "start": "node backend/server.js"
   },
   "keywords": [],

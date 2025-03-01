@@ -3,7 +3,6 @@ import { useParams,useNavigate } from 'react-router-dom';
 import { useProductStore } from '../store/useProductstore';
 
 const ProductPage = () => {
-  const [enter , setEnter] = useState(false);
   const nevigate=useNavigate();
   const { id } = useParams(); // Capture product ID from URL
   const { fetchProduct, currentProduct, setStudentData, addStudent } = useProductStore(); // Fetch product and store current product
@@ -42,12 +41,9 @@ const ProductPage = () => {
     idNumber: '',
     phoneNumber: '',
   }),3000)
-  if(enter === true)
-  {
-    setTimeout(()=>{
-      nevigate('/')
-    },3000)
-  }
+  setTimeout(()=>{
+    nevigate('/')
+  },3000)
   }
   
   // Validate ID card number (Pakistani CNIC)
@@ -91,7 +87,6 @@ const ProductPage = () => {
 
       // Then, add the student data to the store (API call or local storage operation can be done in addStudent)
       addStudent(userInput); // Store the data
-      setEnter(true);
     }
   };
 
