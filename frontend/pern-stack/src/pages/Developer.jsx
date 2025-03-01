@@ -3,9 +3,9 @@ import React from 'react';
 const Developer = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-      <div className="max-w-4xl w-full bg-white rounded-lg shadow-lg p-8">
+      <div className="max-w-4xl w-full bg-primary rounded-lg shadow-lg p-8">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-800">Developer Waqas ali shah</h1>
+          <h1 className="text-4xl font-bold text-gray-900  font-mono ">Developer Waqas ali shah</h1>
           <p className="text-xl text-gray-600 mt-2">React & Node.js Developer</p>
         </div>
         

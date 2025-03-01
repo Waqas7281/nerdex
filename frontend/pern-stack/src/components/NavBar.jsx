@@ -25,12 +25,10 @@ const NavBar = () => {
           {/* Right section */}
           <div className="flex items-center gap-4">
             <div> {/* Changed <p> to <div> */}
+  
               <ThemeSelector />
               {isHomePage && (
                 <div className="indicator">
-                    <Link to="/developer"><button className="btn btn-primary" >Developer
-          
-          </button></Link>
                   <div className=" transition-colors justify-center items-center flex">
                      {/* <ShoppingCartIcon className="size-5" /> */}
                     {/* <span className="badge badge-sm badge-primary indicator-item">
